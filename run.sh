@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ ! -f wallfade ]; then
+if [ ! -f ./build/wallfade ]; then
     make
 fi
 
-xwinwrap -b -fs -sp -fs -nf -ov -- ./wallfade -w WID -p $HOME/images/wallpapers
+xwinwrap -b -fs -sp -fs -nf -ov -- ./build/wallfade -w WID -p $1
